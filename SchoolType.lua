@@ -1,0 +1,35 @@
+print('number 1')
+print("")
+local number1 = io.read()
+print("")
+print("+ - ; x")
+print("")
+local h = io.read()
+print("")
+print("number 2")
+print("")
+local number2 = io.read()
+if h == "+" then
+    print("")
+    print("output:")
+    print("")
+    print(number1 + number2)
+elseif h == "-" then
+    print("")
+    print("output:")
+    print("")
+    print(number1 - number2)
+elseif h == ";" then
+    print("")
+    print("output:")
+    print("")
+    print(number1 / number2)
+elseif string.lower(h) == "x" then
+    print("")
+    print("output:")
+    print("")
+    print(number1 * number2)
+else
+    print("")
+    error("please enter something valid")
+end
